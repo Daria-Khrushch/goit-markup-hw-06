@@ -711,13 +711,14 @@ address {
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   background-color: #fff;
   border-radius: 4px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 40px 40px 40px 40px;
 }
 .modal-button {
   cursor: pointer;
@@ -746,10 +747,6 @@ address {
 
 .form {
   width: 448px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .modal-comment {
@@ -796,6 +793,7 @@ address {
   line-height: 24px;
   color: var(--primary-text-color);
   margin-bottom: 30px;
+  position: relative;
 }
 
 .checkbox .link {
@@ -810,9 +808,6 @@ address {
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 2;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   width: 200px;
@@ -821,13 +816,8 @@ address {
   border: var(--accent-color);
   margin-left: auto;
   margin-right: auto;
-  transition-property: background-color, color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-type);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.button-s {
-  display: flex;
+  display: block;
 }
 
 .username {
@@ -860,7 +850,7 @@ address {
   cursor: pointer;
   position: absolute;
   left: 8px;
-  top: 431px;
+  top: 4px;
 }
 
 .old-checkbox:checked ~ .checkbox-icon,
@@ -873,7 +863,7 @@ address {
   cursor: pointer;
   position: absolute;
   left: 8.5px;
-  top: 431.5px;
+  top: 4px;
 }
 
 .visualy-hidden {
